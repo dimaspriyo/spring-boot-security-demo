@@ -51,14 +51,12 @@ margin-bottom:auto;
 		<div class="row justify-content-center">
 
 		<div class="content">
-		<h1 class="text-center mb-3">Available Pages</h1>
-		<a href="/home/admin"><button type="button" class="btn btn-secondary"><h3>Admin Page</h3></button></a>
-		<a href="/home/user"><button type="button" class="btn btn-info"><h3>User Page</h3></button></a>
-		<a href="/home/allroles"><button type="button" class="btn btn-success"><h3>All Roles Page</h3></button></a>
-		<form id="logout-form" th:action="@{/logout}" method="post" class="text-center mt-3">
-    	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-    	<button type="submit" class="btn btn-danger"><h3>Logout</h3></button>
-		</form>
+		<h1 class="text-center mb-3">Unauthorized !</h1>
+		<blockquote class="blockquote">
+		  <p class="mb-0">You can't Access this Page</p>
+		  <footer class="blockquote-footer"><cite title="Source Title">Erro Page</cite></footer>
+		</blockquote>
+		<a href="/home">Back to Home</a>
 		</div>
 	
 		</div>	

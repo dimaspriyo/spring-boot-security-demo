@@ -28,4 +28,9 @@ public class HomeController {
 		return "allroles";
 	}
 	
+	@GetMapping("/error")
+	public String error() {
+		return "error";
+	}
+	
 }
