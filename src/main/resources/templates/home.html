@@ -1,0 +1,64 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Spring Boot Movie CRUD</title>
+
+<link rel="stylesheet" type="text/css"
+	th:href="@{/bootstrap/css/bootstrap.css}">
+
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css" />
+
+
+<style>
+
+.wrapper{
+height: 100vh;
+}
+
+.wrapper .row{
+height: 100%;
+}
+
+.content{
+margin-top:auto;
+margin-bottom:auto;
+}
+</style>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+	integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+	crossorigin="anonymous"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
+<script th:src="@{/bootstrap/js/bootstrap.js}" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#example').DataTable();
+	});
+</script>
+
+
+</head>
+<body>
+
+	<div class="container wrapper">
+	
+	
+		<div class="row justify-content-center">
+
+		<div class="content">
+		<h1 class="text-center mb-3">Available Pages</h1>
+		<a href="/home/admin"><button type="button" class="btn btn-secondary"><h3>Admin Page</h3></button></a>
+		<a href="/home/user"><button type="button" class="btn btn-info"><h3>User Page</h3></button></a>
+		<a href="/home/allroles"><button type="button" class="btn btn-success"><h3>All Roles Page</h3></button></a>
+		</div>
+	
+		</div>	
+	</div>
+
+</body>
+</html>
